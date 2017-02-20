@@ -1,0 +1,48 @@
+".container": {
+	backgroundColor:"white"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+}
+
+"#label": {
+	font: {
+		fontSize: 16
+	},
+	padding : 4,
+	left : '5%',
+	right : '20%',
+	height : '76%',
+	color : '#000000',
+	borderRadius : 5,
+	borderColor : '#000000',
+	borderWidth : 1,
+	hintText : 'say something....'
+}
+
+"#clear" : {
+	right : '5%',
+	font: {
+		fontSize: 16
+	},
+	color : '#000000'
+}
+
+".mainLabel" : {
+	top : '20dp',
+	left : '20dp',
+	height : '70dp',
+	width : '120dp',
+	borderColor : '#000000',
+	borderWidth : '1dp',
+	borderRadius : '4dp',
+	font: {
+		fontSize: 16,
+		fontWeight : 'bold'
+	},
+	color : '#000000',
+	textAlign : 'center'
+}

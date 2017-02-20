@@ -1,0 +1,29 @@
+<Alloy>
+	<Window class="container">
+		<View id="view2" top="0" height="20%" >
+			<TextArea id="label" hintText="Say Something...."></TextArea>
+			<Button id="clear" onClick="doClear">Clear</Button>
+		</View>
+		<View id="view1" bottom="0" height="80%" >
+			<View layout="horizontal">
+				<Label id="label1" class="mainLabel" onClick="doClick">Hi</Label>
+				<Label id="label2" class="mainLabel" onClick="doClick">Hello</Label>
+				<Label id="label3" class="mainLabel" onClick="doClick">Hey</Label>
+				<Label id="label4" class="mainLabel" onClick="doClick">Good</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Great</Label>
+				<Label id="label6" class="mainLabel" onClick="doClick">Love</Label>
+				<Label id="label7" class="mainLabel" onClick="doClick">You</Label>
+				<Label id="label8" class="mainLabel" onClick="doClick">I</Label>
+				<Label id="label9" class="mainLabel" onClick="doClick">Food</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Breakfast</Label>
+				<Label id="label11" class="mainLabel" onClick="doClick">Drink</Label>
+				<Label id="label12" class="mainLabel" onClick="doClick">Water</Label>
+				<Label id="label13" class="mainLabel" onClick="doClick">Wine</Label>
+				<Label id="label14" class="mainLabel" onClick="doClick">Cold</Label>
+				<Label id="label15" class="mainLabel" onClick="doClick">Hot</Label>
+				<Label id="label16" class="mainLabel" onClick="doClick">Medication</Label>
+				
+			</View>
+		</View>
+	</Window>
+</Alloy>
