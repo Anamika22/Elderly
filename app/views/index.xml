@@ -22,7 +22,12 @@
 				<Label id="label14" class="mainLabel" onClick="doClick">Cold</Label>
 				<Label id="label15" class="mainLabel" onClick="doClick">Hot</Label>
 				<Label id="label16" class="mainLabel" onClick="doClick">Medication</Label>
-				
+				<Label id="label16" class="mainLabel" onClick="doClick">Eat</Label>
+				<Label id="label16" class="mainLabel" onClick="doClick">Play</Label>
+				<Label id="label16" class="mainLabel" onClick="doClick">Burger</Label>
+				<Label id="label16" class="mainLabel" onClick="doClick">am</Label>
+				<Label id="label16" class="mainLabel" onClick="doClick">Lovely</Label>
+					
 			</View>
 		</View>
 	</Window>
