@@ -10,7 +10,7 @@
 
 "#label": {
 	font: {
-		fontSize: 16
+		fontSize: 18
 	},
 	padding : 4,
 	left : '5%',
@@ -20,7 +20,9 @@
 	borderRadius : 5,
 	borderColor : '#000000',
 	borderWidth : 1,
-	hintText : 'say something....'
+	hintText : 'say something....',
+	enabled :false
+	
 }
 
 "#clear" : {
@@ -40,7 +42,7 @@
 	borderWidth : '1dp',
 	borderRadius : '4dp',
 	font: {
-		fontSize: 16,
+		fontSize: 20,
 		fontWeight : 'bold'
 	},
 	color : '#000000',
