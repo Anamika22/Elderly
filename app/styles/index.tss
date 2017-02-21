@@ -10,25 +10,33 @@
 
 "#label": {
 	font: {
-		fontSize: 18
+		fontSize: 20,
+		fontFamily : 'Saumil_guj2'
 	},
 	padding : 4,
 	left : '5%',
 	right : '20%',
-	height : '76%',
+	height : '72%',
 	color : '#000000',
 	borderRadius : 5,
 	borderColor : '#000000',
 	borderWidth : 1,
 	hintText : 'say something....',
 	enabled :false
-	
 }
 
 "#clear" : {
+	right : '13%',
+	font: {
+		fontSize: 18
+	},
+	color : '#000000'
+}
+
+"#clean" : {
 	right : '5%',
 	font: {
-		fontSize: 16
+		fontSize: 18
 	},
 	color : '#000000'
 }
@@ -43,7 +51,8 @@
 	borderRadius : '4dp',
 	font: {
 		fontSize: 20,
-		fontWeight : 'bold'
+		fontWeight : 'bold',
+		fontFamily : 'Saumil_guj2'
 	},
 	color : '#000000',
 	textAlign : 'center'

@@ -2,10 +2,11 @@
 	<Window class="container">
 		<View id="view2" top="0" height="20%" >
 			<TextArea id="label" hintText="Say Something...."></TextArea>
-			<Button id="clear" onClick="doClear">Clear</Button>
+			<Button id="clear" onClick="doClear">Delete</Button>
+			<Button id="clean" onClick="doClean">Clear</Button>
 		</View>
-		<View id="view1" bottom="0" height="80%" >
-			<View layout="horizontal">
+		<ScrollView id="view1" bottom="0" height="80%" layout="vertical" >
+			<!-- <View layout="horizontal" height="Titanium.UI.SIZE">
 				<Label id="label1" class="mainLabel" onClick="doClick">Hi</Label>
 				<Label id="label2" class="mainLabel" onClick="doClick">Hello</Label>
 				<Label id="label3" class="mainLabel" onClick="doClick">Hey</Label>
@@ -14,21 +15,72 @@
 				<Label id="label6" class="mainLabel" onClick="doClick">Love</Label>
 				<Label id="label7" class="mainLabel" onClick="doClick">You</Label>
 				<Label id="label8" class="mainLabel" onClick="doClick">I</Label>
+				<Label id="label8" class="mainLabel" onClick="doClick">am</Label>
+				<Label id="label8" class="mainLabel" onClick="doClick">Thank you</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Goodbye</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">What time?</Label>
+			</View>
+			<View layout="horizontal" height="Titanium.UI.SIZE">
+				<Label id="label5" class="mainLabel" onClick="doClick">Emergency</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Call</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Help</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Doctor</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Ambulance</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Police</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Fire department</Label>
+			</View>
+			<View layout="horizontal" height="Titanium.UI.SIZE">
+				<Label id="label5" class="mainLabel" onClick="doClick">I feel</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Happy</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Sad</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Angry</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Tired</Label>
+				<Label id="label5" class="mainLabel" onClick="doClick">Sleepy</Label>
+			</View>
+			<View layout="horizontal" height="Titanium.UI.SIZE">
+				<Label id="label5" class="mainLabel" onClick="doClick">I Want</Label>
 				<Label id="label9" class="mainLabel" onClick="doClick">Food</Label>
 				<Label id="label10" class="mainLabel" onClick="doClick">Breakfast</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Dinner</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Eat</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Hungry</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Chicken</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Soup</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Pizza</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Egg</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Chees</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Egg</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Grape</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Banana</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Apple</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Orange</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Ice cream</Label>
+				<Label id="label10" class="mainLabel" onClick="doClick">Cake</Label>
+			</View>
+			<View layout="horizontal" height="Titanium.UI.SIZE">
 				<Label id="label11" class="mainLabel" onClick="doClick">Drink</Label>
 				<Label id="label12" class="mainLabel" onClick="doClick">Water</Label>
+				<Label id="label13" class="mainLabel" onClick="doClick">Milk</Label>
+				<Label id="label12" class="mainLabel" onClick="doClick">Tea</Label>
+				<Label id="label12" class="mainLabel" onClick="doClick">Coffee</Label>
 				<Label id="label13" class="mainLabel" onClick="doClick">Wine</Label>
+				<Label id="label13" class="mainLabel" onClick="doClick">Beer</Label>
+			</View>
+			<View layout="horizontal" height="Titanium.UI.SIZE">
 				<Label id="label14" class="mainLabel" onClick="doClick">Cold</Label>
 				<Label id="label15" class="mainLabel" onClick="doClick">Hot</Label>
+			</View>
+			<View layout="horizontal" height="Titanium.UI.SIZE">
 				<Label id="label16" class="mainLabel" onClick="doClick">Medication</Label>
-				<Label id="label16" class="mainLabel" onClick="doClick">Eat</Label>
 				<Label id="label16" class="mainLabel" onClick="doClick">Play</Label>
+				<Label id="label16" class="mainLabel" onClick="doClick">Pause</Label>
+				<Label id="label16" class="mainLabel" onClick="doClick">Music</Label>
 				<Label id="label16" class="mainLabel" onClick="doClick">Burger</Label>
 				<Label id="label16" class="mainLabel" onClick="doClick">am</Label>
 				<Label id="label16" class="mainLabel" onClick="doClick">Lovely</Label>
-					
 			</View>
-		</View>
+			<View height="4%" ></View>	 -->	
+			
+		</ScrollView>
 	</Window>
 </Alloy>
