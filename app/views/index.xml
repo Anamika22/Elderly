@@ -1,11 +1,11 @@
 <Alloy>
 	<Window class="container">
-		<View id="view2" top="0" height="20%" >
+		<View id="view2" top="0" height="30%" >
 			<TextArea id="label" hintText="Say Something...."></TextArea>
 			<Button id="clear" onClick="doClear">Delete</Button>
 			<Button id="clean" onClick="doClean">Clear</Button>
 		</View>
-		<ScrollView id="view1" bottom="0" height="80%" layout="vertical" >
+		<ScrollView id="view1" bottom="0" height="70%" layout="vertical" >
 			<!-- <View layout="horizontal" height="Titanium.UI.SIZE">
 				<Label id="label1" class="mainLabel" onClick="doClick">Hi</Label>
 				<Label id="label2" class="mainLabel" onClick="doClick">Hello</Label>

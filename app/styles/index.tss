@@ -10,42 +10,53 @@
 
 "#label": {
 	font: {
-		fontSize: 20,
+		fontSize: 48,
 		fontFamily : 'Saumil_guj2'
 	},
 	padding : 4,
 	left : '5%',
-	right : '20%',
-	height : '72%',
+	right : '25%',
+	height : '85%',
 	color : '#000000',
 	borderRadius : 5,
 	borderColor : '#000000',
 	borderWidth : 1,
 	hintText : 'say something....',
-	enabled :false
+	enabled :false,
+	backgroundColor:"#feffaf",
 }
 
 "#clear" : {
 	right : '13%',
+	height:"25%",
+	width:"10%",
 	font: {
-		fontSize: 18
+		fontSize: 30
 	},
-	color : '#000000'
+	color : '#000000',
+	borderRadius:3,
+	borderWidth : 2,
+	borderColor : '#000000',
 }
 
 "#clean" : {
-	right : '5%',
+	right : '1%',
+	height:"25%",
+	width:"10%",
 	font: {
-		fontSize: 18
+		fontSize: 30
 	},
-	color : '#000000'
+	color : '#000000',
+	borderRadius:3,
+	borderWidth : 2,
+	borderColor : '#000000',
 }
 
 ".mainLabel" : {
 	top : '20dp',
 	left : '20dp',
-	height : '70dp',
-	width : '120dp',
+	height : '90dp',
+	width : '160dp',
 	borderColor : '#000000',
 	borderWidth : '1dp',
 	borderRadius : '4dp',

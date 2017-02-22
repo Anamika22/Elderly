@@ -33,17 +33,18 @@ for(var i=0; i < dataJson.length; i++){
 		var label = Ti.UI.createLabel({
 			top : '20dp',
 			left : '20dp',
-			height : '70dp',
-			width : '120dp',
+			height : '80dp',
+			width : '145dp',
 			borderColor : '#000000',
 			borderWidth : '1dp',
 			borderRadius : '4dp',
 			font: {
-				fontSize: 20,
+				fontSize: 28,
 				fontWeight : 'bold',
 				fontFamily : 'Saumil_guj2'
 			},
 			color : '#000000',
+			backgroundColor :"#ffd8af",
 			textAlign : 'center',
 			text : dataJson[i][j].toString()
 		});
