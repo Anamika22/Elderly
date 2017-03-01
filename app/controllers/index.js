@@ -3,6 +3,10 @@ function doClick(e) {
 	$.label.value = $.label.value + " " + e.source.text;
 }
 
+function openSettings(){
+	Alloy.createController("Settings").getView().open();
+}
+
 function doClear(e){
 	var str = $.label.value;
 	var lastSpace = (str.lastIndexOf(" "));
