@@ -1,6 +1,7 @@
 <Alloy>
 	<Window class="container">
 		<View id="view2" top="10" height="20%" >
+			<Button id="settings" onClick="openSettings"></Button>
 			<TextArea id="label" hintText="Say Something...."></TextArea>
 			<Button id="clear" onClick="doClear"></Button>
 			<Button id="clean" onClick="doClean">Clear</Button>

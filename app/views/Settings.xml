@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container" id="settingsWin">
+		<View id="view1" top="20" height="60dp" >
+			<Button id="back" left="20" onClick="doBack">Back</Button>
+		</View>
+	</Window>
+</Alloy>
