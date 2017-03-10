@@ -1,5 +1,5 @@
 <Alloy>
-	<View class="viewLabel">
+	<View id="viewLabel">
 		<Label id="mainLabel"></Label>
 		<Label id="closeLabel" onClick="removeThisView"></Label>
 	</View>

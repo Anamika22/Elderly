@@ -64,7 +64,17 @@ addButton.addEventListener('click', function() {
 	}).getView();
 	sourceParent.add(view3_1);
 
-	sourceParent.add(createAddView());
+	
+	
+	var addLabel = createAddView();
+	sourceParent.add(addLabel);
+	
+	addLabel.addEventListener('click', function(e) {
+		popupView.visible = 'true';
+		source = e.source;
+		sourceParent = e.source.parent;
+	});
+	
 	hidePopupView();
 });
 
