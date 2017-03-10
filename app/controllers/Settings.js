@@ -55,12 +55,15 @@ popupView.add(addButton);
 
 addButton.addEventListener('click', function() {
 	var textareaValue = textArea.value;
-	
+
 	sourceParent.remove(source);
-	
-	var view3_1 = createLabelView(textareaValue);
+
+	var view3_1 = Alloy.createController('viewLabel', {
+		text : textareaValue.toString(),
+		textVisible : true
+	}).getView();
 	sourceParent.add(view3_1);
-	
+
 	sourceParent.add(createAddView());
 	hidePopupView();
 });
@@ -82,11 +85,11 @@ var button_cancel = Titanium.UI.createButton({
 });
 button_cancel.addEventListener('click', function() {
 	hidePopupView();
-	textArea.value = "";
 });
 
 function hidePopupView() {
 	popupView.visible = 'false';
+	textArea.value = "";
 }
 
 popupView.add(button_cancel);
@@ -99,7 +102,10 @@ for (var i = 0; i < dataJson.length; i++) {
 	$.view2.add(view);
 
 	for (var j = 0; j < dataJson[i].length; j++) {
-		var view3_1 = createLabelView(dataJson[i][j]);
+		var view3_1 = Alloy.createController('viewLabel', {
+			text : dataJson[i][j].toString(),
+			textVisible : true
+		}).getView();
 		view.add(view3_1);
 	}
 
@@ -117,49 +123,7 @@ $.view2.add(Ti.UI.createView({
 	height : "4%"
 }));
 
-function createLabelView(_string) {
-	var view3 = Ti.UI.createView({
-		top : '20dp',
-		left : '40dp',
-		height : '80dp',
-		width : '155dp',
-		borderColor : '#000000',
-		borderWidth : '1dp',
-		borderRadius : '4dp',
-		backgroundColor : "#ffd8af",
-	});
-
-	var label1 = Ti.UI.createLabel({
-		font : {
-			fontSize : 28,
-			fontWeight : 'bold',
-			fontFamily : 'Saumil_guj2'
-		},
-		color : '#000000',
-		textAlign : 'center',
-		text : _string.toString()
-	});
-	view3.add(label1);
-
-	var label2 = Ti.UI.createLabel({
-		font : {
-			fontSize : 28,
-			fontWeight : 'bold',
-			fontFamily : 'FontAwesome'
-		},
-		color : '#000000',
-		backgroundColor : "#ffd8af",
-		top : "4dp",
-		right : "4dp",
-		text : "\uf05c",
-		textAlign : 'center'
-	});
-
-	view3.add(label2);
-	return view3;
-}
-
-function createAddView(){
+function createAddView() {
 	var label3 = Ti.UI.createLabel({
 		top : '20dp',
 		left : '40dp',

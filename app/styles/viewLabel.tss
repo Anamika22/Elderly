@@ -1,0 +1,36 @@
+
+"#viewLabel" : {
+  	top : '20dp',
+	left : '40dp',
+	height : '80dp',
+	width : '155dp',
+	borderColor : '#000000',
+	borderWidth : '1dp',
+	borderRadius : '4dp',
+	backgroundColor : "#ffd8af",
+}
+
+"#mainLabel" : {
+	font : {
+		fontSize : 28,
+		fontWeight : 'bold',
+		fontFamily : 'Saumil_guj2'
+	},
+	color : '#000000',
+	textAlign : 'center',
+	text : "_string.toString()"
+}
+
+"#closeLabel" : {
+	font : {
+		fontSize : 28,
+		fontWeight : 'bold',
+		fontFamily : 'FontAwesome'
+	},
+	color : '#000000',
+	backgroundColor : "#ffd8af",
+	top : "4dp",
+	right : "4dp",
+	text : "\uf05c",
+	textAlign : 'center'
+}
