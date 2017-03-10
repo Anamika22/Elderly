@@ -1,6 +1,7 @@
 function doClick(e) {
 	// alert(e.source.text);
 	$.label.value = $.label.value + " " + e.source.text;
+	
 }
 
 function openSettings(){
@@ -24,6 +25,8 @@ var dataJson = [
 	["હું", "માંગો છો", "ખોરાક", "બ્રેકફાસ્ટ", "રાત્રિભોજન", "ખાવું", "ભૂખ્યા", "સૂપ", "પિઝા", "ચીઝ", "દ્રાક્ષ", "બનાના", "સફરજન", "નારંગી", "દાડમ", "આઈસ્ક્રીમ", "કેક"],
 	["પીણું", "પાણી", "દૂધ", "ચા", "કોફી"]
 ];
+
+Ti.App.Properties.setObject('givenName', dataJson);
 
 // var dataJson = [
 	// ["Hi", "Hey", "Good", "Great", "Love", "You", "am", "Thank you", "Goodbye", "What time?"],
