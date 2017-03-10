@@ -149,7 +149,7 @@ for(var i=0; i < dataJson.length; i++){
 				   borderColor : '#000000',
 				   borderWidth : '1dp',
 				   borderRadius : '4dp',
-				   id :"addLabel"
+				   id :"addLabel",
 					textAlign :'center',
 					font: {
 						fontSize: 28,
