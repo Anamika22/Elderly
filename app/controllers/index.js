@@ -1,7 +1,6 @@
 function doClick(e) {
 	// alert(e.source.text);
 	$.label.value = $.label.value + " " + e.source.text;
-	
 }
 
 function openSettings(){
@@ -44,32 +43,13 @@ for(var i=0; i < dataJson.length; i++){
 		height : Ti.UI.SIZE,
 	});
 	$.view1.add(view);
-	// view.addEventListener('click', doClick);
 	
 	for(var j=0; j < dataJson[i].length; j++){
-		var label = Ti.UI.createLabel({
-			top : '20dp',
-			left : '40dp',
-			height : '80dp',
-			width : '155dp',
-			borderColor : '#000000',
-			borderWidth : '1dp',
-			borderRadius : '4dp',
-			font: {
-				fontSize: 28,
-				fontWeight : 'bold',
-				fontFamily : 'Saumil_guj2'
-			},
-			color : '#000000',
-			backgroundColor :"#ffd8af",
-			textAlign : 'center',
-			text : dataJson[i][j].toString()
-		});
+		var label = Alloy.createController('viewLabel', {text : dataJson[i][j].toString(), textVisible : false}).getView();
+		
 		label.addEventListener('click', doClick);
 		view.add(label);
-		// Ti.API.info(dataJson[i][j]);
 	}
-	
 }
 $.view1.add(Ti.UI.createView({height : "4%"}));
 
