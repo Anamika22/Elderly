@@ -112,7 +112,6 @@ function hidePopupView() {
 
 popupView.add(button_cancel);
 
-alert(dataJson.length);
 for (var i = 0; i < dataJson.length; i++) {
 	var view = Ti.UI.createView({
 		layout : "horizontal",
