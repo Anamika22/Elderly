@@ -81,8 +81,23 @@ addButton.addEventListener('click', function() {
 		textVisible : true
 	}).getView();
 	sourceParent.add(view3_1);
+<<<<<<< HEAD
+
+	
+	
+	var addLabel = createAddView();
+	sourceParent.add(addLabel);
+	
+	addLabel.addEventListener('click', function(e) {
+		popupView.visible = 'true';
+		source = e.source;
+		sourceParent = e.source.parent;
+	});
+	
+=======
 	
 	sourceParent.add(createAddView());
+>>>>>>> swanandmaratheblisstering/master
 	hidePopupView();
 });
 
