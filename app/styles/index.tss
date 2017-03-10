@@ -28,7 +28,7 @@
 
 "#settings" : {
 	left : '2%',
-	top : '10%',
+	top : '12%',
 	height:"50",
 	width:"50",
 	font: {
