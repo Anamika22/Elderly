@@ -3,12 +3,30 @@ var args = $.args;
 var source = null;
 var sourceParent = null;
 
+var isAnyDataUpdated = true;
+
 function doBack() {
+	if(isAnyDataUpdated){
+		var localDataJson = [];
+		var parentView = $.view2;
+		var parentViewLen = $.view2.children.length;
+		for(var i = 0; i < parentViewLen-1; i++){
+			var tempArr = [];
+			for(var j = 0; j < parentView.children[i].children.length -1; j++){
+				// alert(parentView.children[i].children[0].children[0].text);
+				tempArr.push(parentView.children[i].children[j].children[0].text);
+			}
+			localDataJson.push(tempArr);
+		}
+		
+		// Ti.API.info(JSON.stringify(localDataJson));
+		Ti.App.Properties.setObject('givenName', localDataJson);
+		Ti.App.fireEvent('updateIndexView');
+	}
 	$.settingsWin.close();
 }
 
 var dataJson = Ti.App.Properties.getObject('givenName');
-Ti.API.info("JsonData", dataJson);
 
 var popupView = Titanium.UI.createView({
 	backgroundColor : '#CCFDF7EF',
@@ -63,7 +81,7 @@ addButton.addEventListener('click', function() {
 		textVisible : true
 	}).getView();
 	sourceParent.add(view3_1);
-
+	
 	sourceParent.add(createAddView());
 	hidePopupView();
 });
@@ -94,6 +112,7 @@ function hidePopupView() {
 
 popupView.add(button_cancel);
 
+alert(dataJson.length);
 for (var i = 0; i < dataJson.length; i++) {
 	var view = Ti.UI.createView({
 		layout : "horizontal",
@@ -110,11 +129,13 @@ for (var i = 0; i < dataJson.length; i++) {
 	}
 
 	var addLabel = createAddView();
+	addButton.selectedIndex = i;
 	view.add(addLabel);
 
 	addLabel.addEventListener('click', function(e) {
 		popupView.visible = 'true';
 		source = e.source;
+		e.source.selectedIndex;
 		sourceParent = e.source.parent;
 	});
 
