@@ -19,6 +19,9 @@ var dataJson = [
 ];
 
 Ti.App.Properties.setObject('givenName', dataJson);
+Ti.App.Properties.setInt('fontValue',28);
+Ti.App.Properties.setInt('width',155);
+
 
 // var dataJson = [
 	// ["Hi", "Hey", "Good", "Great", "Love", "You", "am", "Thank you", "Goodbye", "What time?"],

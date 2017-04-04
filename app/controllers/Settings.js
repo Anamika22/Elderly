@@ -2,6 +2,7 @@
 var args = $.args;
 var source = null;
 var sourceParent = null;
+var view3_1= null;
 
 var isAnyDataUpdated = true;
 
@@ -76,7 +77,7 @@ addButton.addEventListener('click', function() {
 
 	sourceParent.remove(source);
 
-	var view3_1 = Alloy.createController('viewLabel', {
+	view3_1 = Alloy.createController('viewLabel', {
 		text : textareaValue.toString(),
 		textVisible : true
 	}).getView();
@@ -128,7 +129,7 @@ for (var i = 0; i < dataJson.length; i++) {
 	$.view2.add(view);
 
 	for (var j = 0; j < dataJson[i].length; j++) {
-		var view3_1 = Alloy.createController('viewLabel', {
+		view3_1 = Alloy.createController('viewLabel', {
 			text : dataJson[i][j].toString(),
 			textVisible : true
 		}).getView();
@@ -171,4 +172,31 @@ function createAddView() {
 		text : "\uf067"
 	});
 	return label3;
+}
+
+function updateFont(e){
+	var fontValue = Ti.App.Properties.getInt('fontValue');
+	var labelWidth=Ti.App.Properties.getInt('width');
+	if(e.source.id == 'increaseFont')
+	{
+    	fontValue += 2;
+    	labelWidth +=8;
+    }	
+	else
+	{
+		fontValue -= 2;
+		labelWidth -=8;
+	}	
+    var parentView = $.view2;
+	var parentViewLen = $.view2.children.length;
+	for (var i = 0; i < parentViewLen - 1; i++) {
+		for (var j = 0; j < parentView.children[i].children.length - 1; j++) {
+			parentView.children[i].children[j].children[0].font = { fontSize :fontValue };
+			parentView.children[i].children[j].width = labelWidth;
+		}
+	}
+    
+    Ti.App.Properties.setInt('fontValue',fontValue); 
+    Ti.App.Properties.setInt('width',labelWidth); 
+    
 }

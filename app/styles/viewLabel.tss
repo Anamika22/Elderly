@@ -12,7 +12,7 @@
 
 "#mainLabel" : {
 	font : {
-		fontSize : 28,
+		// fontSize : 28,
 		fontWeight : 'bold',
 		fontFamily : 'Saumil_guj2'
 	},

@@ -8,3 +8,28 @@
 		fontSize: 24,
 	},
 }
+
+
+"#increaseFont" :{
+	font: {
+		fontSize: 24,
+		
+	},
+    borderRadius :"1dp",
+    borderColor :"#000000",
+	borderWidth:"1dp",
+	height:"40dp",
+	width:"40dp"
+}
+
+"#decreaseFont" :{
+	font: {
+		fontSize: 24,
+	},
+	borderRadius :"1dp",
+	borderColor :"#000000",
+	borderWidth:"1dp",
+	height:"40dp",
+	width:"40dp"
+	
+}
