@@ -6,19 +6,19 @@ var sourceParent = null;
 var isAnyDataUpdated = true;
 
 function doBack() {
-	if(isAnyDataUpdated){
+	if (isAnyDataUpdated) {
 		var localDataJson = [];
 		var parentView = $.view2;
 		var parentViewLen = $.view2.children.length;
-		for(var i = 0; i < parentViewLen-1; i++){
+		for (var i = 0; i < parentViewLen - 1; i++) {
 			var tempArr = [];
-			for(var j = 0; j < parentView.children[i].children.length -1; j++){
+			for (var j = 0; j < parentView.children[i].children.length - 1; j++) {
 				// alert(parentView.children[i].children[0].children[0].text);
 				tempArr.push(parentView.children[i].children[j].children[0].text);
 			}
 			localDataJson.push(tempArr);
 		}
-		
+
 		// Ti.API.info(JSON.stringify(localDataJson));
 		Ti.App.Properties.setObject('givenName', localDataJson);
 		Ti.App.fireEvent('updateIndexView');
@@ -81,23 +81,16 @@ addButton.addEventListener('click', function() {
 		textVisible : true
 	}).getView();
 	sourceParent.add(view3_1);
-<<<<<<< HEAD
 
-	
-	
 	var addLabel = createAddView();
 	sourceParent.add(addLabel);
-	
+
 	addLabel.addEventListener('click', function(e) {
 		popupView.visible = 'true';
 		source = e.source;
 		sourceParent = e.source.parent;
 	});
-	
-=======
-	
-	sourceParent.add(createAddView());
->>>>>>> swanandmaratheblisstering/master
+
 	hidePopupView();
 });
 
@@ -149,7 +142,6 @@ for (var i = 0; i < dataJson.length; i++) {
 	addLabel.addEventListener('click', function(e) {
 		popupView.visible = 'true';
 		source = e.source;
-		e.source.selectedIndex;
 		sourceParent = e.source.parent;
 	});
 
